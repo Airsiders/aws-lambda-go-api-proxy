@@ -2,10 +2,12 @@ package fiberadapter_test
 
 import (
 	"context"
+	"log"
 
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/gofiber/fiber/v2"
 
+	fiberadapter "github.com/awslabs/aws-lambda-go-api-proxy/fiber"
 	fiberadaptor "github.com/awslabs/aws-lambda-go-api-proxy/fiber"
 
 	. "github.com/onsi/ginkgo"
@@ -280,6 +282,31 @@ var _ = Describe("FiberLambda tests", func() {
 			Expect(resp.MultiValueHeaders[fiber.HeaderContentLength]).To(Equal([]string{"77"}))
 			Expect(resp.MultiValueHeaders[fiber.HeaderConnection]).To(Equal([]string{"keep-alive"}))
 			Expect(resp.Body).To(Equal(""))
+		})
+	})
+})
+
+var _ = Describe("FiberLambdaALB tests", func() {
+	Context("Simple ping request", func() {
+		It("Proxies the event correctly", func() {
+			log.Println("Starting test")
+			app := fiber.New()
+			app.Get("/ping", func(c *fiber.Ctx) error {
+				return c.SendString("pong")
+			})
+
+			adapter := fiberadapter.NewALB(app)
+
+			req := events.ALBTargetGroupRequest{
+				HTTPMethod:     "GET",
+				Path:           "/ping",
+				RequestContext: events.ALBTargetGroupRequestContext{},
+			}
+
+			resp, err := adapter.Proxy(req)
+
+			Expect(err).To(BeNil())
+			Expect(resp.StatusCode).To(Equal(200))
 		})
 	})
 })
