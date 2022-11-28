@@ -1,7 +1,7 @@
 github.com/aws/aws-lambda-go v1.10.0 h1:uafgdfYGQD0UeT7d2uKdyWW8j/ZYRifRPIdmeqLzLCk=
 github.com/aws/aws-lambda-go v1.10.0/go.mod h1:zUsUQhAUjYzR8AuduJPCfhBuKWUaDbQiPOG+ouzmE1A=
-github.com/awslabs/aws-lambda-go-api-proxy v0.3.0 h1:HHYn0RgPacnBqdljaJlwG9rWivKn4GqPLYEDXo4Dba4=
-github.com/awslabs/aws-lambda-go-api-proxy v0.3.0/go.mod h1:1WYCl0lFZD+KAqdW+usdz46oShDhOEj3uTw09Qv++28=
+github.com/0angelic0/aws-lambda-go-api-proxy v0.3.0 h1:HHYn0RgPacnBqdljaJlwG9rWivKn4GqPLYEDXo4Dba4=
+github.com/0angelic0/aws-lambda-go-api-proxy v0.3.0/go.mod h1:1WYCl0lFZD+KAqdW+usdz46oShDhOEj3uTw09Qv++28=
 github.com/chzyer/logex v1.1.10/go.mod h1:+Ywpsq7O8HXn0nuIou7OrIPyXbp3wmkHB+jjWRnGsAI=
 github.com/chzyer/readline v0.0.0-20180603132655-2972be24d48e/go.mod h1:nSuG5e5PlCu98SY8svDHJxuZscDgtXS6KTTbou5AhLI=
 github.com/chzyer/test v0.0.0-20180213035817-a1ea475d72b1/go.mod h1:Q3SI9o4m/ZMnBNeIyt5eFwwo7qiLfzFZmjNmxjkiQlU=

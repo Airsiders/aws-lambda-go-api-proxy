@@ -4,8 +4,8 @@ import (
 	"context"
 	"log"
 
+	irisadapter "github.com/0angelic0/aws-lambda-go-api-proxy/iris"
 	"github.com/aws/aws-lambda-go/events"
-	irisadapter "github.com/awslabs/aws-lambda-go-api-proxy/iris"
 	"github.com/kataras/iris/v12"
 
 	. "github.com/onsi/ginkgo"
