@@ -3,7 +3,7 @@ package handlerfunc
 import (
 	"net/http"
 
-	"github.com/0angelic0/aws-lambda-go-api-proxy/httpadapter"
+	"github.com/Airsiders/aws-lambda-go-api-proxy/httpadapter"
 )
 
 type HandlerFuncAdapter = httpadapter.HandlerAdapter

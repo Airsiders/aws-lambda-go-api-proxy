@@ -7,7 +7,7 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/0angelic0/aws-lambda-go-api-proxy/core"
+	"github.com/Airsiders/aws-lambda-go-api-proxy/core"
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/go-chi/chi/v5"
 )

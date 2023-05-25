@@ -5,7 +5,7 @@ import (
 	"errors"
 	"net/http"
 
-	"github.com/0angelic0/aws-lambda-go-api-proxy/core"
+	"github.com/Airsiders/aws-lambda-go-api-proxy/core"
 	"github.com/gorilla/mux"
 )
 

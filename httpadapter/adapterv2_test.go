@@ -6,7 +6,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/0angelic0/aws-lambda-go-api-proxy/httpadapter"
+	"github.com/Airsiders/aws-lambda-go-api-proxy/httpadapter"
 	"github.com/aws/aws-lambda-go/events"
 
 	. "github.com/onsi/ginkgo"

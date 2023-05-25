@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"strconv"
 
-	ginadapter "github.com/0angelic0/aws-lambda-go-api-proxy/gin"
+	ginadapter "github.com/Airsiders/aws-lambda-go-api-proxy/gin"
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-lambda-go/lambda"
 	"github.com/gin-gonic/gin"

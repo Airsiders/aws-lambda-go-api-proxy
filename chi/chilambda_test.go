@@ -5,7 +5,7 @@ import (
 	"log"
 	"net/http"
 
-	chiadapter "github.com/0angelic0/aws-lambda-go-api-proxy/chi"
+	chiadapter "github.com/Airsiders/aws-lambda-go-api-proxy/chi"
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/go-chi/chi/v5"
 

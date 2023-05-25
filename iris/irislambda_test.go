@@ -4,7 +4,7 @@ import (
 	"context"
 	"log"
 
-	irisadapter "github.com/0angelic0/aws-lambda-go-api-proxy/iris"
+	irisadapter "github.com/Airsiders/aws-lambda-go-api-proxy/iris"
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/kataras/iris/v12"
 

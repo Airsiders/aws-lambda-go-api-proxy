@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/0angelic0/aws-lambda-go-api-proxy/gorillamux"
+	"github.com/Airsiders/aws-lambda-go-api-proxy/gorillamux"
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/gorilla/mux"
 

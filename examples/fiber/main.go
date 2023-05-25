@@ -5,7 +5,7 @@ import (
 	"context"
 	"log"
 
-	fiberadapter "github.com/0angelic0/aws-lambda-go-api-proxy/fiber"
+	fiberadapter "github.com/Airsiders/aws-lambda-go-api-proxy/fiber"
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-lambda-go/lambda"
 	"github.com/gofiber/fiber/v2"

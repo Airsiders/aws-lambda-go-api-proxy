@@ -9,7 +9,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/0angelic0/aws-lambda-go-api-proxy/core"
+	"github.com/Airsiders/aws-lambda-go-api-proxy/core"
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-lambda-go/lambdacontext"
 
@@ -92,7 +92,7 @@ var _ = Describe("RequestAccessorV2 tests", func() {
 		})
 
 		// Support `QueryStringParameters` for backward compatibility.
-		// https://github.com/0angelic0/aws-lambda-go-api-proxy/issues/37
+		// https://github.com/Airsiders/aws-lambda-go-api-proxy/issues/37
 		qsRequest := getProxyRequestV2("/hello", "GET")
 		qsRequest.QueryStringParameters = map[string]string{
 			"hello": "1",

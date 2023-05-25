@@ -14,7 +14,7 @@ import (
 	"github.com/gofiber/fiber/v2/utils"
 	"github.com/valyala/fasthttp"
 
-	"github.com/0angelic0/aws-lambda-go-api-proxy/core"
+	"github.com/Airsiders/aws-lambda-go-api-proxy/core"
 )
 
 // FiberLambda makes it easy to send API Gateway proxy events to a fiber.App.
