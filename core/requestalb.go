@@ -92,7 +92,9 @@ func (r *RequestAccessorALB) EventToRequest(req events.ALBTargetGroupRequest) (*
 	if len(req.QueryStringParameters) > 0 {
 		values := url.Values{}
 		for key, value := range req.QueryStringParameters {
-			values.Add(key, value)
+			unEscapedKey, _ := url.QueryUnescape(key)
+			unEscapedValue, _ := url.QueryUnescape(value)
+			values.Add(unEscapedKey, unEscapedValue)
 		}
 		path += "?" + values.Encode()
 	}
